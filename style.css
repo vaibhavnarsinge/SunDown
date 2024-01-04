@@ -1,0 +1,364 @@
+@font-face{
+    font-family: "Neohass";
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Neohass";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.page{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav .nav-2{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    padding: 2vh 2vw;
+    position: relative;
+}
+
+.nav img{
+    cursor: pointer;
+}
+
+
+.nav .nav-2 h3{
+    cursor: pointer;
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw 3vw;
+    border: 2px solid rgba(0, 0, 0, 0.39);
+    font-size: 15px;
+    border-radius: 50px ;
+    position: relative;
+    color: rgba(0, 0, 0, 0.692);
+    overflow: hidden;
+}
+
+.nav .nav-2 h3 a{
+    text-decoration: none;
+    z-index: 9;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.nav .nav-2 h3::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: -100%;
+}
+
+.nav .nav-2 h3:hover::after{
+    bottom: 0%;
+    transition: all ease 0.4s;
+}
+.nav .nav-2 h3:hover a{
+    color: rgb(255, 255, 255);
+}
+
+
+/*                               NAV BAR END                                    */
+
+.center{
+    width: 100%;
+    height: 81vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.568);
+    padding-bottom: 2vw;
+}
+
+.left{
+    width: 25vw;
+    font-size: 1.7vw;
+    font-weight:bold;
+    line-height: 4vh;
+    padding-bottom: 1vw;
+}
+.right{
+    font-size: 4.8vw;
+    line-height: 18vh;
+    text-align: end;
+    font-weight: bolder;
+    padding-right: 2.2vw;
+    padding-bottom: 1vw;
+}
+
+/*                        Center End                     */
+
+.page  video{
+    width: 100%;
+    padding: 4vw 0vw;
+    position: relative;
+}
+
+.hero{
+    width: 47vw;
+    height: 37vw;
+    /* background-color: #FE320A; */
+    /* border-radius: 50%; */
+    /* border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; */
+    right: 0;
+    top: 80vh;
+    position: absolute;
+}
+
+.hero .hero-1{
+    width: 100%;
+    height: 100%;
+    background-color: #FE320A;
+    position: absolute;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    
+}
+.hero .hero-2{
+    width: 30vw;
+    height: 30vw;
+    background: linear-gradient(to top,orangered,rgb(255, 60, 0));
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.hero .hero-3{
+    width: 30vw;
+    height: 30vw;
+    background-color: #FE320A;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+    from{
+        transform: translate(-20%,10%);
+    }
+    to{
+        transform: translate(10%,-10%);
+    } 
+}
+@keyframes anim2 {
+    from{
+        transform: translate(20%,-10%);
+    }
+    to{
+        transform: translate(-10%,10%);
+    } 
+}
+
+/*               video part ended                */
+
+.page-2{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 2vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+
+/* Moving text */
+
+.moving-text{
+    background-color: #ffffff;
+}
+
+.moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: text-moving;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.gola{
+    height: 70px;
+    width: 70px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0vw 2vw;
+  
+}
+
+.moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+}
+
+@keyframes text-moving {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+.page2-btm{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+}
+
+.page2-btm h1{
+    margin-top: -7vw;
+    width:60%;
+    font-size: 4vw;
+    line-height: 90%;
+    z-index: 9;
+
+}
+
+.page2-btm .btm-part2{
+    /* margin-right: 2vw; */
+    margin-top: 14vw;
+    margin-right: 3vw;
+    width: 20%;
+    
+}
+
+.page2-btm .btm-part2 img{
+        width: 100%;
+        height: 13vw;
+        border-radius: 10px;
+}
+
+.page2-btm .btm-part2 p{
+    text-align: justify;
+    font-size: 1.1vw;
+}
+
+/*             2nd gola             */
+.gola-2{
+    margin-left: 23vw;
+    height: 28vw;
+    width: 28vw;
+    background: linear-gradient(to top right,rgb(255, 38, 0),rgb(255, 81, 0));
+    border-radius:50%;
+    top: 54%;
+    position: absolute;
+    filter: blur(19px);
+    animation-name: gola-2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gola-2 {
+    from{
+        transform: translate(10%,-10%) skew(0);
+    }
+    to{
+        transform: translate(-10%,10%) skew(-12deg);
+    }
+    
+}
+
+
+/*        Page - 3           */
+
+.page-3{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page-3 .elem{
+    position: relative;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    left: 0;
+    padding: 0 2vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.493);
+    overflow: hidden;
+    cursor: pointer;
+}
+.page-3 .elem h2{
+    font-size: 3vw;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 81, 0);
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: ease-in 0.4s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+    cursor: pointer;
+}
+
+
+.page-3 .imti{
+    display: flex;
+    align-items: center;
+    padding: 2vw 2vw;
+    gap: 10px;
+}
+
+.page-3 .imti img{
+    width: 0.5vw;
+}
+
