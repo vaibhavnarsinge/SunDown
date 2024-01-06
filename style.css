@@ -362,3 +362,20 @@ html,body{
     width: 0.5vw;
 }
 
+/*  ----Fixed image----    */
+
+
+.fix-image{
+    height: 32vw;
+    width: 25vw;
+    /* background-color: red; */
+    z-index: 99;
+    border-radius: 10px;
+    left: 50%;
+    top: 15%;
+    position: fixed;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    animation: ease-in-out;
+}
