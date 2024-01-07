@@ -15,11 +15,16 @@ html,body{
     width: 100%;
 }
 
+#main{
+    position: relative;
+    z-index: 10;
+}
+
 
 .page{
     min-height: 100vh;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #efeae3;
     padding: 0 2vw;
     position: relative;
 }
@@ -193,7 +198,7 @@ html,body{
     width: 100%;
     min-height: 100vh;
     padding: 0 2vw;
-    background-color: rgb(255, 255, 255);
+    background-color: #efeae3;
     position: relative;
 }
 
@@ -201,7 +206,7 @@ html,body{
 /* Moving text */
 
 .moving-text{
-    background-color: #ffffff;
+    background-color: #efeae3;
 }
 
 .moving-text{
@@ -315,8 +320,9 @@ html,body{
 /*        Page - 3           */
 
 .page-3{
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
+    background-color: #efeae3;
 }
 
 .page-3 .elem{
@@ -366,8 +372,8 @@ html,body{
 
 
 .fix-image{
-    height: 32vw;
-    width: 25vw;
+    height: 25vw;
+    width: 21vw;
     /* background-color: red; */
     z-index: 99;
     border-radius: 10px;
@@ -378,4 +384,83 @@ html,body{
     background-size: cover;
     background-position: center;
     animation: ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+/*             page -4               */
+
+.page-4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 2vw 2vw;
+}
+.page-4 .page4b{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:wheat;
+    border-radius: 10px;
+}
+
+.page-4 .page4b .page-41{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vw;
+}
+
+.page-4 .page4b .page-41 h1{
+    height: 10vw;
+    width: 15vw;
+}
+.page-4 .page4b .page-41 p{
+    height: 15vw;
+    width: 15vw;
+    text-align: justify;
+}
+
+.page-4 .page4b .page-42 img{
+    border-radius: 20px;
+}
+
+
+
+.page-5{
+    height: 100vh;
+    width: 100%;
+}
+.page-6{
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+
+.footer{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    bottom: 0%;
+    background:linear-gradient(red,black);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 3vw 3vw;
+}
+
+.footer h5{
+    font-size: 23vw;
+}
+
+
+.footer .footer-btm{
+    border-top: 1px solid white;
+    padding: 2vw;
+}
+
